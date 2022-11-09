@@ -15,6 +15,10 @@ body
 	font-weight: 400;
 }
 
+ul {
+    padding-inline-start: 0px;
+}
+
 /* start all section */
 /* #home,
 #home .fp-slide,
@@ -220,11 +224,26 @@ h1,h2,h3,h4,h5
         background: #f69707;
         border-color: transparent;
     }
-
-#home img {
-    max-width: 200px;
-    border-radius: 50%;
+#home img 
+    {
+        max-width: 200px;
+        border-radius: 50%;
+    }
+#home ul{
+    position: relative;
+    overflow: hidden;
 }
+#home li{
+    display: block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+    margin: 0 auto;
+}
+/* .slider-container{
+    position: relative;
+    overflow: hidden;
+} */
 /* end home */
 
 /* start work */

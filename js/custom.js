@@ -1,5 +1,21 @@
+//responsive slider
+$(function () {
+    $("#slider").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: false,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+            $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+            $('.events').append("<li>after event fired.</li>");
+        }
+    });
+});
 
-//
+// fullPage
 $(document).ready(function() {
 			$('#fullpage').fullpage({
 				'verticalCentered': false,
@@ -15,5 +31,4 @@ $(document).ready(function() {
 $(function()
 {
     new WOW().init();
-    $(".rotate").textrotator();
 })
