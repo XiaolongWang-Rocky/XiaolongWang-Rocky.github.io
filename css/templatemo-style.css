@@ -248,13 +248,15 @@ h5 {
     -ms-animation-timing-function: ease-in;
 }
 
-.spec_card_container p {
-    opacity: 0;
-    transition: opacity 1s ease-in;
-    -webkit-transition: opacity 1s ease-in;
-    -o-transition: opacity 1s ease-in;
-    -moz-transition: opacity 1s ease-in;
-    -ms-transition: opacity 1s ease-in;
+@media (min-width: 992px) {
+    .spec_card_container p {
+        opacity: 0;
+        transition: opacity 1s ease-in;
+        -webkit-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+    }
 }
 
 .spec_card:hover+p {
@@ -263,37 +265,58 @@ h5 {
 /* end specialities */
 
 /* start about */
-#about h4 {
-    padding: 15px 0;
-    color: #D43F52;
+#about h2 {
+    text-align: center;
 }
 
-#about .progress {
-    border-radius: 4px;
-    background: #ffffff;
-    height: 4px;
+.about_title {
+    margin-bottom: 40px;
 }
 
-#about .progress .progress-bar-danger {
-    background: #D43F52;
+.exp_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-#about .text-top {
-    padding-top: 50px;
+.l_exp_list {
+    height: auto;
+    flex-basis: 45%;
+    text-align: left;
 }
 
-#about span {
-    color: #ffffff;
-    font-weight: bold;
-    display: block;
-    padding-bottom: 6px;
+.time_line {
+    width: 10px;
+    min-width: 10px;
+    background-color: #f69707;
 }
 
-#about small {
-    font-weight: bold;
-    float: right;
+.r_exp_list {
+    height: auto;
+    flex-basis: 45%;
 }
 
+.r_exp_list h4{
+    text-align: right;
+}
+
+.l_exp_list div, .r_exp_list div {
+    height: 100px;
+    position: relative;
+}
+
+.exp_container h4 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    font-style: italic;
+}
+
+.exp_item {
+    border-bottom: 2px solid #f69707;
+}
 /* end about */
 
 /* start portfolio */
@@ -313,7 +336,7 @@ h5 {
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay {
-    background: #D43F52;
+    background: #f69707;
     top: 0;
     left: 0;
     right: 0;
@@ -350,7 +373,7 @@ h5 {
 #contact .fa {
     border: 2px solid #ffffff;
     border-radius: 50%;
-    color: #D43F52;
+    color: #f69707;
     width: 50px;
     height: 50px;
     line-height: 45px;
@@ -372,7 +395,7 @@ h5 {
 }
 
 #contact input[type="submit"] {
-    background: #D43F52;
+    background: #f69707;
     border: 2px solid transparent;
     color: #ffffff;
     font-weight: bold;
@@ -381,7 +404,7 @@ h5 {
 
 #contact input[type="submit"]:hover {
     background: #ffffff;
-    color: #D43F52;
+    color: #f69707;
 }
 
 /* end contact */
@@ -422,7 +445,7 @@ footer hr {
 }
 
 .social-icon li a:hover {
-    color: #D43F52;
+    color: #f69707;
 }
 
 /* end social icon */
