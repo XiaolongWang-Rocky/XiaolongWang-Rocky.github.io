@@ -248,15 +248,13 @@ h5 {
     -ms-animation-timing-function: ease-in;
 }
 
-@media (min-width: 992px) {
-    .spec_card_container p {
-        opacity: 0;
-        transition: opacity 1s ease-in;
-        -webkit-transition: opacity 1s ease-in;
-        -o-transition: opacity 1s ease-in;
-        -moz-transition: opacity 1s ease-in;
-        -ms-transition: opacity 1s ease-in;
-    }
+.spec_card_container p {
+    opacity: 0;
+    transition: opacity 1s ease-in;
+    -webkit-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
 }
 
 .spec_card:hover+p {
