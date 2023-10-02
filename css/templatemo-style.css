@@ -39,6 +39,10 @@ ul {
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
 
+#certificates,
+#certificates .fp-slide,
+#certificates .fp-tableCell,
+
 footer,
 footer .fp-slide,
 footer .fp-tableCell {
@@ -63,6 +67,7 @@ h5 {
 #specialities,
 #about,
 #portfolio,
+#certificates,
 #contact {
     padding-top: 100px;
     padding-bottom: 120px;
@@ -263,10 +268,6 @@ h5 {
 /* end specialities */
 
 /* start about */
-#about {
-    background: #1a1a1a;
-}
-
 #about h2 {
     text-align: center;
 }
@@ -371,10 +372,56 @@ h5 {
     display: block;
     text-align: center;
 }
-
 /* end portfolio */
 
+/* start certificates*/
+#certificates {
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#certificates h2 {
+    padding-bottom: 30px;
+}
+
+.certificate-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.certificate-thumb img {
+    aspect-ratio: 1/0.8;
+}
+
+.certificate-name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    background-color: rgba(16,16,16,0.75);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 0;
+    opacity: 0;
+}
+
+.certificate-thumb:hover .certificate-name {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+    -webkit-transition: opacity 0.5s ease-in;
+    -o-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
+    -ms-transition: opacity 0.5s ease-in;
+}
+/* end certificates*/
+
 /* start contact */
+#contact {
+    background-color: #1a1a1a;
+}
 
 #contact address {
     padding-bottom: 18px;
